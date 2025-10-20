@@ -1,4 +1,4 @@
-/* ===== Global ===== */
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -6,15 +6,16 @@ body {
   color: #222;
 }
 
-/* ===== Hero ===== */
 .hero {
-  background: url("../images/hero-bg.jpg");
-  height: 70vh;
+  background: url("../images/hero-bg.jpg") no-repeat center center;
+  background-size: cover; /* keep this if you want it to fill the section */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 
 .overlay {
   background-color: rgba(0,0,0,0.6);
