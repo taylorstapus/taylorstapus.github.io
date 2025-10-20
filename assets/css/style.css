@@ -7,7 +7,7 @@ body {
 }
 
 .hero {
-  background: url("../assets/images/hero-bg.jpg") center/cover no-repeat;
+  background: url("../assets/images/hero-bg.jpg") 
   color: white;
   height: 70vh;
   display: flex;
