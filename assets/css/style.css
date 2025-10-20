@@ -1,4 +1,4 @@
-
+/* ===== Global ===== */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -6,23 +6,21 @@ body {
   color: #222;
 }
 
+/* ===== Hero ===== */
 .hero {
-  background: url("../assets/images/hero-bg.jpg");
-  color: white;
+  background: url("../assets/images/hero-bg.jpg") center/cover no-repeat;
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
-  padding: 10px;  
-  margin: 0;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0,0,0,0.6);
   padding: 2rem;
   border-radius: 10px;
+  color: white;
 }
 
 .btn {
@@ -32,17 +30,13 @@ body {
   border: none;
   border-radius: 6px;
   text-decoration: none;
-  transition: background 0.3s;
 }
 
-.btn:hover {
-  background-color: #005fa3;
-}
-
+/* ===== Navbar ===== */
 .navbar {
   background-color: #004c91;
-  padding: 1rem;
   text-align: center;
+  padding: 1rem;
 }
 
 .navbar ul {
@@ -52,7 +46,7 @@ body {
 
 .navbar li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .navbar a {
@@ -61,8 +55,9 @@ body {
   font-weight: bold;
 }
 
+/* ===== Sections ===== */
 .section {
-  padding: 3rem 1.5rem;
+  padding: 2rem 1rem;
   max-width: 1000px;
   margin: auto;
 }
@@ -72,22 +67,23 @@ h2 {
   color: #004c91;
 }
 
+/* ===== Cards ===== */
 .card-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 .card {
   background-color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1rem;
   width: 300px;
   text-align: center;
+  border-radius: 10px;
 }
 
+/* ===== Document Links ===== */
 .doc-links {
   list-style: none;
   padding: 0;
@@ -95,26 +91,42 @@ h2 {
 }
 
 .doc-links li {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
+/* ===== Video ===== */
 .video-container {
   display: flex;
-  justify-content: center; 
-  margin-top: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .video-container iframe {
-  width: 80%;   
-  height: 450px; 
-  max-width: 100%; 
+  width: 80%;
+  max-width: 100%;
+  aspect-ratio: 16/9;
   border: 0;
+  border-radius: 10px;
 }
 
+/* ===== Footer ===== */
 footer {
   text-align: center;
   background-color: #004c91;
   color: white;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .navbar li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
