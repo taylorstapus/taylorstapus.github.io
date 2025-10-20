@@ -6,11 +6,6 @@ body {
   color: #222;
 }
 
-header {
-  padding: 10px;  /* reduce top/bottom space */
-  margin: 0;
-}
-
 .hero {
   background: url("../assets/images/hero-bg.jpg") center/cover no-repeat;
   color: white;
@@ -20,6 +15,8 @@ header {
   align-items: center;
   text-align: center;
   position: relative;
+   padding: 10px;  /* reduce top/bottom space */
+  margin: 0;
 }
 
 .overlay {
