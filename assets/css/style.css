@@ -15,7 +15,7 @@ body {
   align-items: center;
   text-align: center;
   position: relative;
-   padding: 10px;  /* reduce top/bottom space */
+  padding: 10px;  
   margin: 0;
 }
 
